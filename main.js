@@ -1,3 +1,4 @@
+//Storage
 const storage = (function () {
   // Public methods
   return {

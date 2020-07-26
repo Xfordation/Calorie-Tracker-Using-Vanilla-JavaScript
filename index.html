@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Tracker</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1>
+          Calorie Tracker
+          <button class="clear-btn" id="clearbtn">Clear Field</button>
+        </h1>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="container">
+      <h2>Add Meal</h2>
+      <div class="alert" id="alert">A Field is Empty</div>
+      <div class="frm-container">
+        <form id="frm1">
+          <label for="meal">
+            <span class="lbl">Meal</span>
+            <input
+              type="text"
+              name="t1"
+              id="t1"
+              autocomplete="off"
+              placeholder="Add Meal"
+            />
+          </label>
+          <label for="calorie">
+            <span class="lbl">Calorie</span>
+            <input
+              type="number"
+              name="t2"
+              id="t2"
+              autocomplete="off"
+              placeholder="Calorie"
+            />
+          </label>
+          <button class="add-meal" id="addbtn">
+            <i class="tiny material-icons">add</i>Add Meal
+          </button>
+          <button class="update-meal" id="updatebtn">
+            <i class="tiny material-icons">update</i>Update Meal
+          </button>
+          <button class="delete-meal" id="deletebtn">
+            <i class="tiny material-icons">delete</i>Delete Meal
+          </button>
+          <button class="back" id="backbtn">
+            <i class="tiny material-icons">chevron_left</i> Back
+          </button>
+        </form>
+      </div>
+      <table id="table">
+        <h3>Total Calorie: <span class="tot-cal" id="totcal">0</span></h3>
+        <tr>
+          <th>Item</th>
+          <th>Calorie</th>
+          <th>Edit meal</th>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <h3>Calorie Tracker</h3>
+      <span class="ft">Made By: Xfordation &copy;</span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
